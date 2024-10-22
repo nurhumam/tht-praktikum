@@ -3,57 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portofolio</title>
-    <style>
-       .judul{
-        text-align: center;
-       }
-       .fotoProfile{
-        height: 200px;
-        width: 200px;
-       }
-    </style>
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    
-    <div class="judul">
-        <h1>My Portofolio</h1>
-        <a href="#HomePage">Home</a>
-        <a href="#AboutPage">- About</a>
-        <a href="#JadwalPage">- Jadwal Mata Kuliah</a>
-        <a href="#WorkPage">- Work</a>
-        <a href="#ContactPage">- Contact</a>
-        <br><hr><br>
+    <header id="Home">
+        <div class="judul">
+            <h1>My Portfolio</h1>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Jadwal Kuliah">Jadwal Kuliah</a>
+            <a href="#Ulasan">Ulasan</a>
+            <a href="#Kontak">Kontak</a><br>
+        </div>
+    </header>
 
-        <div id="HomePage">
-            <img src="foto profile.jpg" alt="Foto Profile" class="fotoProfile">
+    <section id="Home">
+        <div class="bio-content">
             <p>HALLO EVERYBODY, I AM</p>
             <h1>NURUL HUMAM</h1>
             <p><i>Junior UI/UX Designer</i></p>
             <p>Mahasiswa Prodi Ilmu Komputer Universitas Pertamina</p>
         </div>
-    </div>
-    <br><hr><br>
-    <div id="AboutPage">
-        <h1>I'm Nurul Humam</h1>
-        <p>saya anak pertama dari tiga bersaudara, saya dan adek pertama saya sedang menempuh masa perkuliahan, untuk mendapatkan gelar sarjana.
-             hobi saya suka berkeliaran di luar rumah dan tentunya bermain game, membaca, mendesain dan berolahraga.
-             makanan kesukaan ku sama seperti selera orang-orang indonesia, yaitu indomie double dengan sebutir telur.</p>
-        <br>
-        <p>ada pepatah yang selalu saya pegang dan menjadi motivasi saya. Abraham Lincoln pernah berkata <q><i>Jangan khawatir ketika Anda tidak diakui, tetapi berusahalah untuk menjadi layak mendapatkan pengakuan.</i></q></p>
-    </div>
-    <br><hr><br>
-    <div id="JadwalPage">
+    </section>
+
+    <section id="About">
+        <img src="foto profile.jpg" alt="Foto Profile" class="image">
+        <div class="artikel">
+            <article>
+                <h2>I'm Nurul Humam</h2>
+                <p>Saya anak pertama dari tiga bersaudara, saya dan adik pertama saya sedang menempuh masa perkuliahan untuk mendapatkan gelar sarjana.
+                    Hobi saya adalah berkeliaran di luar rumah dan tentunya bermain game, membaca, mendesain, dan berolahraga.
+                    Makanan kesukaan saya sama seperti selera orang-orang Indonesia, yaitu Indomie double dengan sebutir telur.</p>
+                <p>Ada pepatah yang selalu saya pegang dan menjadi motivasi saya. Abraham Lincoln pernah berkata, <q><i>Jangan khawatir ketika Anda tidak diakui, tetapi berusahalah untuk menjadi layak mendapatkan pengakuan.</i></q></p>
+            </article>
+        </div>
+    </section>
+
+    <section id="JadwalPage">
         <h1>#Jadwal Kuliah</h1>
-        <p><strong>berikut jadwal mata kuliah saya</strong></p>
+        <p><strong>Berikut jadwal mata kuliah saya:</strong></p>
         <img src="Jadwal Kuliah.jpg" alt="Jadwal Kuliah" width="500px" height="300px">
         <div>
-            <p><strong>pengajar mata kuliah:</strong></p>
+            <p><strong>Pengajar mata kuliah:</strong></p>
             <table border="2" width="80%">
                 <tr>
                     <th rowspan="2">NO</th>
                     <th rowspan="2">Nama Dosen</th>
-                    <th colspan="3">jadwal</th>
+                    <th colspan="3">Jadwal</th>
                 </tr>
                 <tr>
                     <th>Mata Kuliah</th>
@@ -62,88 +59,15 @@
                 </tr>
                 <tr>
                     <th rowspan="4">1</th>
-                    <th rowspan="4">Bu intan Oktafiani</th>
+                    <th rowspan="4">Bu Intan Oktafiani</th>
                     <th rowspan="2">Sistem Informasi</th>
                     <th>Senin (09.00-09.50)</th>
                     <th>Online</th>
                 </tr>
-                <tr>
-                    <th>Kamis (13.00-14.40)</th>
-                    <th>2705</th>
-                </tr>
-                <tr>
-                    <th rowspan="2">APPl</th>
-                    <th>Kamis (08.30-10.10)</th>
-                    <th>2705</th>
-                </tr>
-                <tr>
-                    <th>Jumat (08.30-09.20)</th>
-                    <th>Online</th>
-                </tr>
-                <tr>
-                    <th rowspan="2">2</th>
-                    <th rowspan="2">Bu Meredita</th>
-                    <th rowspan="2">MPPL</th>
-                    <th>Senin (16.00-16.50)</th>
-                    <th>2705</th>
-                </tr>
-                <tr>
-                    <th>Rabu (16.00-17.40)</th>
-                    <th>5203</th>
-                </tr>
-                <tr>
-                    <th rowspan="2">3</th>
-                    <th rowspan="2">Bu Tasmi</th>
-                    <th rowspan="2">PBE</th>
-                    <th>Senin (12.40-14.20)</th>
-                    <th>5203</th>
-                </tr>
-                <tr>
-                    <th>Selasa (13.00-13.50)</th>
-                    <th>2705</th>
-                </tr>
-                <tr>
-                    <th rowspan="4">4</th>
-                    <th rowspan="4">Pak Randi</th>
-                    <th rowspan="2">Pemweb</th>
-                    <th>Senin (14.30-15.10)</th>
-                    <th>5203</th>
-                </tr>
-                <tr>
-                    <th>Selasa (08.00-09.40)</th>
-                    <th>5203</th>
-                </tr>
-                <tr>
-                    <th rowspan="2">PAA</th>
-                    <th>Kamis (16.00-16.40)</th>
-                    <th>5203</th>
-                </tr>
-                <tr>
-                    <th>Jumat (09.30-10.20)</th>
-                    <th>5203</th>
-                </tr>
-                <tr>
-                    <th rowspan="2">5</th>
-                    <th rowspan="2">Bu Ariana</th>
-                    <th rowspan="2">PSD</th>
-                    <th>Selasa (10.00-11.40)</th>
-                    <th>2705</th>
-                </tr>
-                <tr>
-                    <th>Rabu (12.00-12.50)</th>
-                    <th>2705</th>
-                </tr>
-                <tr>
-                    <th>6</th>
-                    <th>Pak Tirta</th>
-                    <th>PB</th>
-                    <th>Kamis (11.00-12.40)</th>
-                    <th>5203</th>
-                </tr>
             </table>
         </div>
-        
-        <p><strong>mata kuliah:</strong></p>
+
+        <p><strong>Mata Kuliah:</strong></p>
         <ul>
             <li>Sistem Informasi</li>
             <li>Pembangunan Bidang Energi</li>
@@ -155,23 +79,50 @@
             <li>Perancangan dan Analisis Algoritma</li>
             <li>Praktikum Pemrograman Website</li>
         </ul>
+    </section>
 
-    </div>
-    <br><hr><br>
-    <div id="WorkPage">
-        <h1>#Pekerjaan Saya</h1>
-        <ul>
-            <li>Pelajar</li>
-        </ul>
-    </div>
-    <br><hr><br>
-    <div id="ContactPage">
-        <h1>#Contact</h1>
-        <p>anda dapat menghubungi saya melalui:</p>
-        <a href=""><u>Email: mutarobbi56@gmail.com </u></a>
-        <a href="https://www.instagram.com/nur.humamm/profilecard/?igsh=MXB5eGg5c2Vob2lkMQ=="><u>Instagram</u></a>
-        <a href="https://www.facebook.com/nurul.humam.77?mibextid=ZbWKwL"><u>Facebook</u></a>
-    </div>
-        
+    <section>
+        <div>
+            <h3>Tonton Video Kami</h3>
+            <video controls width="400" height="300" poster="thumbnail.jpg">
+                <source src="vidio.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+            </video>
+        </div>
+
+        <div>
+            <h3>Audio Video di atas</h3>
+            <audio controls>
+                <source src="Ehrling - Sthlm Sunset.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung audio.
+            </audio>
+        </div>
+
+        <p>Link Youtube <a href="https://www.youtube.com/watch?v=rNdRcJXrtnM">click here</a></p>
+    </section>
+
+    <aside id="Ulasan">
+        <h3>Berikan ulasan anda mengenai materi di atas</h3>
+        <form>
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda"><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda"><br>
+
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan atau feedback Anda..."></textarea><br>
+
+            <button type="submit" class="submit-btn">Kirim</button>
+        </form>
+    </aside>
+
+
+    <footer id="Kontak">
+        <h3><strong>Hubungi saya:</strong></h3>
+        <a href="https://www.instagram.com/nur.humamm/profilecard/?igsh=MXB5eGg5c2Vob2lkMQ==">Instagram</a>
+        <a href="https://www.facebook.com/nurul.humam.77?mibextid=ZbWKwL">Facebook</a><br>
+        <p>&copy; 2024 Blog Tutorial HTML. Semua hak cipta dilindungi.</p>
+    </footer>
 </body>
 </html>
