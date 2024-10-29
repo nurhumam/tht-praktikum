@@ -1,72 +1,68 @@
-/* General styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Header and Footer background color */
-header, footer {
-    background-color: cyan;
-    color: black;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
+    background-color: cyan;
+    color: black;
     padding: 20px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
 }
 
-footer {
-    padding: 10px;
-    text-align: center;
-    margin-top: 20px;
+header h1 {
+    margin: 0;
+    font-size: 20px;
 }
 
-/* Links in the header */
-.judul a {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
     color: black;
-    margin: 0 15px;
     text-decoration: none;
+    font-size: 20px;
     padding: 5px;
 }
 
-.judul a:hover {
+nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
     color: white;
 }
 
-/* New Bio Box */
 #BioBox {
     background-color: #f9f9f9;
     padding: 30px;
-    margin: 20px auto;
-    max-width: 600px;
     border: 2px solid #ddd;
-    border-radius: 10px;
     text-align: center;
 }
 
-#BioBox h1 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-#BioBox p {
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
-
-/* About Section */
 #About {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 2px solid #ddd;
-    padding: 20px;
-    margin-bottom: 30px;
+    gap: 20px;
+    padding: 30px;
     background-color: #f9f9f9;
+    border: 2px solid #ddd;
 }
 
 #About img {
@@ -75,34 +71,18 @@ footer {
     height: 150px;
 }
 
-.artikel article {
-    max-width: 600px;
-    margin-left: 20px;
-}
-
-.artikel article h2::before {
-    content: "👤 ";
-    font-size: 1.5rem;
-}
-
-/* Jadwal Kuliah Section */
 #JadwalPage {
     background-color: #f0f8ff;
-    padding: 20px;
-    margin: 20px auto;
+    padding: 30px;
     border: 2px solid #ddd;
     border-radius: 10px;
-    max-width: 800px;
-}
-
-#JadwalPage h1 {
-    text-align: center;
+    display: grid;
+    gap: 20px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
 }
 
 table, th, td {
@@ -114,36 +94,39 @@ th, td {
     text-align: center;
 }
 
-/* Video Section */
+#video {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border: 2px solid #ddd;
+    display: grid;
+    gap: 20px;
+    text-align: center;
+}
+
 section video, section audio {
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
     border: 2px solid #333;
     border-radius: 10px;
 }
 
-section div {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Ulasan Section */
 #Ulasan {
     padding: 20px;
     background-color: #f0f8ff;
     border: 2px solid #ddd;
     border-radius: 10px;
-    max-width: 600px;
-    margin: 20px auto;
+    width: 100%;
+    margin: 20px 0;
+    box-sizing: border-box;
 }
 
+
 form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 10px;
 }
 
 form input, form textarea {
-    margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -161,4 +144,11 @@ form input, form textarea {
 
 .submit-btn:hover {
     background-color: #555;
+}
+
+footer{
+    background-color: cyan;
+    color: black;
+    padding: 20px;
+    text-align: center;
 }
