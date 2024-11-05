@@ -1,118 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Protofolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="Home">
-        <div>
-            <h1>My Portfolio</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#JadwalPage">Jadwal Kuliah</a></li>
-                <li><a href="#Ulasan">Ulasan</a></li>
-                <li><a href="#Kontak">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
+    <audio autoplay loop>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
 
-    <section id="BioBox">
-        <div class="bio-content">
-            <p>HALLO EVERYBODY, I AM</p>
-            <h1>NURUL HUMAM</h1>
-            <p><i>Junior UI/UX Designer</i></p>
-            <p>Mahasiswa Prodi Ilmu Komputer Universitas Pertamina</p>
-        </div>
-    </section>
+    <!-- <audio src="audio.mp3" autoplay loop></audio> -->
 
-    <section id="About">
-        <img src="foto profile.jpg" alt="Foto Profile">
-        <div class="artikel">
-            <h2>I'm Nurul Humam</h2>
-            <p>Saya anak pertama dari tiga bersaudara, saya dan adik pertama saya sedang menempuh masa perkuliahan untuk mendapatkan gelar sarjana.
-                Hobi saya adalah berkeliaran di luar rumah dan tentunya bermain game, membaca, mendesain, dan berolahraga.
-                Makanan kesukaan saya sama seperti selera orang-orang Indonesia, yaitu Indomie double dengan sebutir telur.</p>
-            <p>Ada pepatah yang selalu saya pegang dan menjadi motivasi saya. Abraham Lincoln pernah berkata, <q><i>Jangan khawatir ketika Anda tidak diakui, tetapi berusahalah untuk menjadi layak mendapatkan pengakuan.</i></q></p>
-        </div>
-    </section>
+    <div class="container">
+        <header>
+            <div class="judul">NHM.CSS</div>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#profile">About</a></li>
+                    <li><a href="#komentarr">Komentar</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="JadwalPage">
-        <h1>#Jadwal Kuliah</h1>
-        <p><strong>Berikut jadwal mata kuliah saya:</strong></p>
-        <img src="Jadwal Kuliah.jpg" alt="Jadwal Kuliah" width="500px" height="300px" >
-        <table>
-            <tr>
-                <th rowspan="2">NO</th>
-                <th rowspan="2">Nama Dosen</th>
-                <th colspan="3">Jadwal</th>
-            </tr>
-            <tr>
-                <th>Mata Kuliah</th>
-                <th>Waktu</th>
-                <th>Ruangan</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Bu Intan Oktafiani</td>
-                <td>Sistem Informasi</td>
-                <td>Senin (09.00-09.50)</td>
-                <td>Online</td>
-            </tr>
-        </table>
-        <ul>
-            <li>Sistem Informasi</li>
-            <li>Pembangunan Bidang Energi</li>
-            <li>Pemrograman Website</li>
-            <li>Manajemen Proyek Perangkat Lunak</li>
-            <li>Pengantar Sains Data</li>
-            <li>Analisis dan Perancangan Perangkat Lunak</li>
-            <li>Pembangunan Berkelanjutan</li>
-            <li>Perancangan dan Analisis Algoritma</li>
-            <li>Praktikum Pemrograman Website</li>
-        </ul>
-    </section>
+        <main>
+            <section id="Home">
+                <div class="text">
+                    <h1>Hey, I'm Humam.</h1>
+                    <p>Web designer and developer from Bogor, Indonesia. I created a website specifically to help learn basic html better online.</p>
+                    <a href="#projek" class="button">My Projects</a>
+                    
+                </div>
+                <div class="photo">
+                    <img src="foto profile.jpg" alt="Humam Photo">
+                </div>
+            </section>
 
-    <section id="video">
-        <h3>Tonton Video Kami</h3>
-        <video controls width="400" height="300" poster="thumbnail.jpg">
-            <source src="vidio.mp4" type="video/mp4">
-            Browser Anda tidak mendukung video.
-        </video>
-        <h3>Audio</h3>
-        <audio controls>
-            <source src="Ehrling - Sthlm Sunset.mp3" type="audio/mpeg">
-            Browser Anda tidak mendukung audio.
-        </audio>
-        <p>Link Youtube <a href="https://www.youtube.com/watch?v=rNdRcJXrtnM">click here</a></p>
-    </section>
+            <section id="profile">
+                <h2>
+                    I am a Frontend Developer and UI/UX Designer with approximately 3 month of experience in programming. 
+                    My expertise includes HTML, CSS, and JavaScript. 
+                    I have a strong passion for digital product development and technology education.
+                </h2>
+                <div class="container-profile">
+                    <div>
+                        <h2>sejarah sekolah</h2>
+                        <p>SD</p>
+                        <ul>
+                            <li>Al-Hidayah</li>
+                            <li>It Albina</li>
+                            <li>SAB</li>
+                        </ul>
+                        <p>SMP</p>
+                        <ul>
+                            <li>Ma'had Assalaam</li>
+                        </ul>
+                        <p>SMA</p>
+                        <ul>
+                            <li>Ma'had Madinatul Qur'an</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>pengalaman organisasi</h2>
+                        <ul>
+                            <li>Anggota Paskibra - 2020</li>
+                            <li>Ketua Div Kebersihan - OSPMQ</li>
+                            <li>Ketua Div Olahraga - Karang Taruna</li>
+                            <li>Ketua Div Dana - Cite Up</li>
+                            <li>Ketua Div Eksternal - Himpunan</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Skill</h2>
+                        <ul>
+                            <li>Frontend Dev</li>
+                            <li>UI/UX Designer</li>
+                            <li>HTML, CSS & JS</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <aside id="Ulasan">
-        <h3>Berikan ulasan anda mengenai materi di atas</h3>
-        <form>
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda">
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Masukkan email Anda">
+                <video controls width="1000" height="500" poster="thumbnail.jpg">
+                    <source src="vidio.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung video.
+                   </video>
+            </section>
 
-            <label for="message">Pesan:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan atau feedback Anda..."></textarea>
+            <section id="projek">
 
-            <button type="submit" class="submit-btn">Kirim</button>
-        </form>
-    </aside>
+                <h1>My Projects</h1>
+                <div class="container-projek">
+                    <div>
+                        <h1>RPL</h1>
+                        <p>
+                            Menyusun Spesifikasi Kebutuhan Perangkat Lunak (SRS) 
+                            serta mengembangkan kerangka dasar yang dibutuhkan dalam perancangan dan pengembangan sebuah aplikasi.
+                        </p>
+                        <a href="pdf/RPL.pdf" target="_blank">
+                        <button type="button">Lihat PDF</button>
+                        </a>
+                    </div>
+                    <div>
+                        <h1>METNUM</h1>
+                        <p>Memprediksi data cuaca yang hilang menggunakan interpolasi linier, 
+                            yang memperkirakan nilai di antara titik data yang diketahui untuk rekonstruksi data cuaca.
+                        </p>
+                        <a href="pdf/Metnum.pdf" target="_blank">
+                        <button type="button">Lihat PDF</button>
+                        </a>
+                    </div>
+                    <div>
+                        <h1>SLPI</h1>
+                        <p>Alat pendeteksi sampah berbasis Internet of Things (IoT)
+                            pada aliran air yang berfungsi mendeteksi keberadaan sampah secara otomatis, 
+                            memudahkan pemantauan dan pengelolaan sampah untuk menjaga kebersihan lingkungan air.
+                        </p>
+                        <a href="pdf/SLPI.pdf" target="_blank">
+                        <button type="button">Lihat PDF</button>
+                        </a>
+                    </div>
+                    <div>
+                        <h1>ASD</h1>
+                        <p>Membuat proyek sistem belanja menggunakan bahasa pemrograman C++, 
+                            yang dirancang untuk memungkinkan pengguna melakukan pembelian barang 
+                            dengan fitur pengelolaan inventaris dan pemrosesan transaksi.
+                        </p>
+                        <a href="SI.pdf" target="_blank">
+                        <button type="button">Lihat GitHub</button>
+                        </a>
+                    </div>
+                    <div>
+                        <h1>PBO</h1>
+                        <p>Mengembangkan Application Programming Interface (API) untuk aplikasi Ruang Guru, 
+                            yang bertujuan untuk memfasilitasi komunikasi antara server dan 
+                            klien serta mendukung integrasi fitur-fitur aplikasi secara efisien.
+                        </p>
+                        <a href="https://github.com/Jihan97ux/ELiteraPBO-Jumat2024" target="_blank">
+                        <button type="button">Lihat GitHub</button>
+                        </a>
+                    </div>
+                    <div>
+                        <h1>Web Portofolio</h1>
+                        <p>Menyiapkan website portofolio sebagai sarana pembelajaran HTML, CSS, dan JavaScript,
+                            yang menampilkan karya-karya serta penerapan teknik pengembangan web yang efektif.
+                        </p>
+                        <a href="https://github.com/nurhumam/tht-praktikum" target="_blank">
+                        <button type="button">Lihat GitHub</button>
+                        </a>
+                    </div>
+                 </div>
+            </section>
 
-    <footer id="Kontak">
-        <h3><strong>Hubungi saya:</strong></h3>
-        <a href="https://www.instagram.com/nur.humamm/profilecard/?igsh=MXB5eGg5c2Vob2lkMQ==">Instagram</a>
-        <a href="https://www.facebook.com/nurul.humam.77?mibextid=ZbWKwL">Facebook</a><br>
-        <p>&copy; 2024 Blog Tutorial HTML. Semua hak cipta dilindungi.</p>
-    </footer>
+            <section id="komentarr">
+                <h3>isi komentar anda</h3>
+                    <form id="pegawaiForm">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda">
+                        <span class="error" id="nameError">Nama harus diisi</span>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Masukkan email Anda">
+                        <span class="error" id="emailError">Email harus diisi</span>
+
+                        <label for="nomor">Nomor:</label>
+                        <input type="nomor" id="nomor" name="nomor" placeholder="Masukkan nomor Anda">
+                        <span class="error" id="nomorError">nomor harus diisi</span>
+
+                        <label for="komentar">Komentar:</label>
+                        <textarea type="text-area" id="komentar" name="komentar" rows="4" cols="30" placeholder="Masukkan komentar Anda"></textarea><br>
+                        <span class="error" id="komentarError">komentar harus diisi</span>
+
+                        <button type="submit">Kirim</button>
+                </form>
+            </section>
+        </main>
+
+        <footer id="contact">
+            <p>Hubungi saya:</p>
+            <a href="https://www.instagram.com/nur.humamm/profilecard/?igsh=MXB5eGg5c2Vob2lkMQ==" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/nurul.humam.77?mibextid=ZbWKwL" target="_blank">Facebook</a>
+            <a href="https://github.com/nurhumam" target="_blank">GitHub</a>
+            <p>© 2024 Blog Tutorial HTML. Semua hak cipta dilindungi.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
